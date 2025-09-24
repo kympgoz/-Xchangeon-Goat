@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xchangeon Goat - Artigos Esportivos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #34a853;
+            --accent-color: #fbbc04;
+            --dark-color: #202124;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--primary-color) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: #0d62d9;
+            border-color: #0d62d9;
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #2a9845;
+            border-color: #2a9845;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+        }
+        
+        .social-icons a {
+            color: var(--light-color);
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-trophy-fill me-2"></i>Xchangeon Goat
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Xchangeon Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Xchangeon Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Xchangeon Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Xchangeon Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#login">Xchangeon Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Xchangeon Goat - Excelência em Artigos Esportivos</h1>
+            <p class="lead mb-4">Oferecemos os melhores produtos esportivos para atletas profissionais e amadores</p>
+            <a href="#produtos" class="btn btn-primary btn-lg me-2">Xchangeon Produtos</a>
+            <a href="#sobre" class="btn btn-secondary btn-lg">Xchangeon Sobre</a>
+        </div>
+    </section>
+
+    <!-- Sobre a Empresa -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Xchangeon Sobre Nossa Empresa</h2>
+                    <p>A <strong>Xchangeon Goat</strong>, com CNPJ 41.076.640/0001-62, foi fundada em 03/03/2021 e tem como razão social Goat Esportivo LTDA. Estamos localizados na cidade de São Paulo, estado de São Paulo.</p>
+                    <p>Nossa atividade principal, conforme a Receita Federal, é <strong>47.63-6-02 - Comércio varejista de artigos esportivos</strong>. Nossa situação cadastral é <span class="badge bg-success">Ativa</span>.</p>
+                    <p>Nosso compromisso é fornecer produtos esportivos de alta qualidade para atletas de todos os níveis, desde iniciantes até profissionais. Trabalhamos com as melhores marcas do mercado para garantir sua satisfação e desempenho.</p>
+                    <a href="#contato" class="btn btn-primary mt-3">Xchangeon Entre em Contato</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Equipamentos esportivos" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Xchangeon Por Que Escolher Nossos Produtos?</h2>
+            <div class="row text-center mt-5">
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-award feature-icon"></i>
+                    <h4>Qualidade Garantida</h4>
+                    <p>Todos os nossos produtos passam por rigorosos controles de qualidade para garantir sua durabilidade e desempenho.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-truck feature-icon"></i>
+                    <h4>Entrega Rápida</h4>
+                    <p>Entregamos em todo o Brasil com prazos curtos e opções de frete que cabem no seu bolso.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-arrow-clockwise feature-icon"></i>
+                    <h4>Garantia Xchangeon</h4>
+                    <p>Oferecemos garantia estendida em todos os produtos e suporte técnico especializado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Xchangeon Nossos Produtos</h2>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Equipamentos de futebol">
+                        <div class="card-body">
+                            <h5 class="card-title">Xchangeon Equipamentos de Futebol</h5>
+                            <p class="card-text">Chuteiras, bolas, uniformes e acessórios para futebol de campo e society.</p>
+                            <a href="#" class="btn btn-primary">Xchangeon Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Equipamentos de corrida">
+                        <div class="card-body">
+                            <h5 class="card-title">Xchangeon Equipamentos de Corrida</h5>
+                            <p class="card-text">Tênis especializados, roupas técnicas e acessórios para corrida de rua e esteira.</p>
+                            <a href="#" class="btn btn-primary">Xchangeon Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="Equipamentos de academia">
+                        <div class="card-body">
+                            <h5 class="card-title">Xchangeon Equipamentos de Academia</h5>
+                            <p class="card-text">Roupas, luvas, acessórios e suplementos para seu treino na academia.</p>
+                            <a href="#" class="btn btn-primary">Xchangeon Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-secondary btn-lg">Xchangeon Ver Todos os Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Xchangeon Entre em Contato</h2>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Xchangeon Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4>Xchangeon Informações de Contato</h4>
+                    <p><i class="bi bi-geo-alt me-2"></i> São Paulo, SP - Brasil</p>
+                    <p><i class="bi bi-telephone me-2"></i> (11) 9999-9999</p>
+                    <p><i class="bi bi-envelope me-2"></i> contato@xchangeongoat.com.br</p>
+                    <p><i class="bi bi-clock me-2"></i> Segunda a Sexta: 9h às 18h</p>
+                    
+                    <h4 class="mt-4">Xchangeon Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xchangeon Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginSenha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="loginSenha" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="lembrar">
+                            <label class="form-check-label" for="lembrar">Lembrar-me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Xchangeon Entrar</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-center w-100">Não tem uma conta? <a href="#">Xchangeon Cadastre-se</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Xchangeon Goat - Todos os direitos reservados</p>
+                    <p>CNPJ: 41.076.640/0001-62 | Goat Esportivo LTDA</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Desenvolvido com <i class="bi bi-heart-fill text-danger"></i> para amantes do esporte</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Ativar modal de login quando o link for clicado
+        document.addEventListener('DOMContentLoaded', function() {
+            var loginLink = document.querySelector('a[href="#login"]');
+            if (loginLink) {
+                loginLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+                    loginModal.show();
+                });
+            }
+            
+            // Smooth scrolling para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
